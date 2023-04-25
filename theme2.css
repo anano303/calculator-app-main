@@ -1,0 +1,42 @@
+.grey {
+  background: #e6e6e6;
+  color: #36362c;
+}
+.grey #reset {
+  background: #378187;
+  box-shadow: inset 0px -4px 0px #1b6066;
+  color: #ffffff;
+}
+.grey #equal {
+  background: #c85402;
+  box-shadow: inset 0px -4px 0px #873901;
+  color: #ffffff;
+}
+
+.grey .section2 {
+  background: #d2cdcd;
+}
+
+.grey #screen {
+  background: #eeeeee;
+  color: #36362c;
+}
+
+.grey #range {
+  background: #d2cdcd;
+}
+.grey #range::-webkit-slider-thumb {
+  background: #c85402;
+}
+.grey .square {
+  background: #e5e4e1;
+  box-shadow: inset 0px -4px 0px #a79e91;
+  border-radius: 5px;
+  color: #36362c;
+}
+
+.grey .square4 {
+  background: #378187;
+  box-shadow: inset 0px -4px 0px #1b6066;
+  color: #ffffff;
+}

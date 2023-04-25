@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Calculator app</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="theme2.css">
+  <link rel="stylesheet" href="theme3.css">
+</head>
+
+<body class="body">
+  <div class="calculator">
+    <header>
+      <div class="header">
+        <div class="left">
+          <h1>calc</h1>
+        </div>
+        <div class="right">
+          <h2>THEME</h2>
+          <div class="theme">
+            <div class="toggle h3">
+              <p id="one">1</p>
+              <p id="two">2</p>
+              <p id="three">3</p>
+            </div>
+
+            <input list="browsers" type="range" name="range" id="range" min="1" max="3" value="3">
+            <datalist id="browsers">
+              <option value="1"></option>
+              <option value="2"></option>
+              <option value="3"></option>
+            </datalist>
+
+          </div>
+        </div>
+      </div>
+
+    </header>
+
+    <section class="section1">
+      <div class="screen">
+        <form name="calc">
+          <input type="text" name="text" readonly id="screen">
+        </form>
+      </div>
+    </section>
+    <section class="section2">
+      <div class="flex">
+        <div class="flex1">
+          <button class="square" onclick="document.calc.text.value+='7'">7</button>
+          <button class="square" onclick="document.calc.text.value+='8'">8</button>
+          <button class="square" onclick="document.calc.text.value+='9'">9</button>
+          <button class="square square4 reset" onclick="del()">DEL</button>
+        </div>
+        <div class="flex1">
+          <button class="square" onclick="document.calc.text.value+='4'">4</button>
+          <button class="square" onclick="document.calc.text.value+='5'">5</button>
+          <button class="square" onclick="document.calc.text.value+='6'">6</button>
+          <button class="square" onclick="document.calc.text.value+='+'">+</button>
+        </div>
+        <div class="flex1">
+          <button class="square" onclick="document.calc.text.value+='1'">1</button>
+          <button class="square" onclick="document.calc.text.value+='2'">2</button>
+          <button class="square" onclick="document.calc.text.value+='3'">3</button>
+          <button class="square" onclick="document.calc.text.value+='-'">-</button>
+        </div>
+        <div class="flex1">
+          <button class="square" onclick="document.calc.text.value+='.'">.</button>
+          <button class="square" onclick="document.calc.text.value+='0'">0</button>
+          <button class="square" onclick="document.calc.text.value+='/'">/</button>
+          <button class="square" onclick="document.calc.text.value+='*'">x</button>
+        </div>
+        <div class="btn">
+          <button id="reset" onclick="document.calc.text.value =''">RESET</button>
+          <button id="equal" onclick="document.calc.text.value = eval(calc.text.value)">=</button>
+        </div>
+      </div>
+
+
+
+    </section>
+  </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
