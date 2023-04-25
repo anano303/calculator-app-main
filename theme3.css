@@ -7,10 +7,18 @@
   box-shadow: inset 0px -4px 0px #414e73;
   color: #ffffff;
 }
+.dark #reset:hover {
+  background: #a2b2e1;
+  box-shadow: inset 0px -4px 0px #414e73;
+}
 .dark #equal {
   background: #d03f2f;
   box-shadow: inset 0px -4px 0px #93261a;
   color: #ffffff;
+}
+.dark #equal:hover {
+  background: #f96b5b;
+  box-shadow: inset 0px -4px 0px #93261a;
 }
 
 .dark .section2 {
@@ -28,10 +36,17 @@
 .dark #range::-webkit-slider-thumb {
   background: #d03f2f;
 }
+.dark #range::-webkit-slider-thumb:hover {
+  background: #f96b5b;
+}
 .dark .square {
   background: #eae3dc;
   box-shadow: inset 0px -4px 0px #b3a497;
   color: #434a59;
+}
+.dark .square:hover {
+  background: #fffffe;
+  box-shadow: inset 0px -4px 0px #b3a497;
 }
 
 .dark .square4 {
@@ -39,4 +54,8 @@
   box-shadow: inset 0px -4px 0px #414e73;
 
   color: #ffffff;
+}
+.dark .square4:hover {
+  background: #a2b2e1;
+  box-shadow: inset 0px -4px 0px #414e73;
 }
