@@ -39,11 +39,13 @@
 .dark #range::-webkit-slider-thumb:hover {
   background: #f96b5b;
 }
+
 .dark .square {
   background: #eae3dc;
   box-shadow: inset 0px -4px 0px #b3a497;
   color: #434a59;
 }
+
 .dark .square:hover {
   background: #fffffe;
   box-shadow: inset 0px -4px 0px #b3a497;

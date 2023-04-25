@@ -34,6 +34,27 @@ three.addEventListener("click", () => {
   //toggle.style.left = "68%";
 });
 
+const rangeInput = document.getElementById("range");
+rangeInput.addEventListener("input", function () {
+  let body = document.querySelector("body");
+  switch (rangeInput.value) {
+    case "1":
+      body.classList.add("dark");
+      body.classList.remove("grey");
+      break;
+
+    case "2":
+      body.classList.remove("dark");
+      body.classList.add("grey");
+      break;
+
+    case "3":
+      body.classList.remove("dark");
+      body.classList.remove("grey");
+      break;
+  }
+});
+
 /*(function (range) {
   range.addEventListener(
     "change",
